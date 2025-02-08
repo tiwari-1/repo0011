@@ -21,6 +21,6 @@ jobs:
       USER_NAME: "a"
   workflow-2:
     needs: workflow-1
-    uses: tiwari-1/repo0088/.github/workflows/res.yml@main
+    uses: tiwari-1/repo0088/.github/workflows/res2.yml@main
     with:
       APP_NAME: "b"
