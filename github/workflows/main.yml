@@ -16,11 +16,11 @@ on:
         default: "at-cli"
 jobs:
   workflow-1:
-    uses: tiwari-1/repo0088/.github/workflows/res.yml
+    uses: tiwari-1/repo0088/.github/workflows/res.yml@main
     with:
       USER_NAME: "a"
   workflow-2:
     needs: workflow-1
-    uses: tiwari-1/repo0088/.github/workflows/res.ymlres2.yml
+    uses: tiwari-1/repo0088/.github/workflows/res.ymlres2.yml@main
     with:
       APP_NAME: "b"
