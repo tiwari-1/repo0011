@@ -1,0 +1,26 @@
+name: Main Token-Rotation Workflow
+on: 
+  schedule:
+    - cron: "*/6 * * * *" 
+  workflow_dispatch:
+    inputs:
+      APP_NAME:
+        description: The AWS Region Code
+        required: false
+        type: string
+        default: "us-east-1"
+      USER_NAME:
+        description: AWS User Name
+        required: true
+        type: string
+        default: "at-cli"
+jobs:
+  workflow-1:
+    uses: tiwari-1/repo0088/.github/workflows/res.yml
+    with:
+      USER_NAME: "a"
+  workflow-2:
+    needs: workflow-1
+    uses: tiwari-1/repo0088/.github/workflows/res.ymlres2.yml
+    with:
+      APP_NAME: "b"
